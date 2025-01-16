@@ -1,15 +1,11 @@
 package paweljjj.pages;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-import paweljjj.configuration.ApplicationConfig;
 import paweljjj.configuration.PlaywrightThread;
 
 @Component
-@RequiredArgsConstructor
 public class HomePage implements PlaywrightThread {
 
-    private final ApplicationConfig applicationConfig;
     private final String searchButton = "[data-target='qbsearch-input.inputButtonText']";
     private final String searchInput = "[data-target='query-builder.input']";
 
